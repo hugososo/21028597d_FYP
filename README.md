@@ -41,24 +41,39 @@ git clone <repository-url>
 
 - Golang installed
 - Docker installed
+- Infura API register
 
 ### Step
 
 1. Download [Golang](https://go.dev/)
 2. Download [Docker](https://www.docker.com/)
-3. Install golang module
+3. Register [Infura](https://www.infura.io/)
+4. Install golang module
 
    ```
    cd backend
    go get .
    ```
 
-4. Start PostgreSQL
+5. Start PostgreSQL
    ```
    cd deployments
    docker-compose up
    ```
-5. Run the server
+6. Config
+   go to configs dir to config the variables
+   Create a env folder and .env.local in it
+   input the following variables
+   ```
+   POSTGRES_HOST=127.0.0.1
+   POSTGRES_USER=postgres
+   POSTGRES_PASSWORD=postgres
+   POSTGRES_PORT=5432
+   POSTGRES_DB_NAME=postgres
+   IPFS_PRJ_ID = <Your infura id>
+   IPFS_API_SECRET = <Your infura api secret>
+   ```
+7. Run the server
    ```
    cd cmd
    go run main.go
