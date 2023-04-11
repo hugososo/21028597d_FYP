@@ -1,0 +1,55 @@
+@use "src/modules/theme" as *;
+
+:root {
+  --tooltip-margin: 25px;
+}
+
+#tooltip {
+  display: inline-block;
+  position: relative;
+
+  &.left {
+    width: max-content;
+  }
+
+  &.right {
+    width: max-content;
+  }
+
+  .label {
+    position: absolute;
+    max-width: 170px;
+    width: max-content;
+    border-radius: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 8px 5px 8px;
+    color: $primary-white-1;
+    background: $extended-dark-blue-1;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 14px;
+    z-index: 100;
+
+    &.top {
+      bottom: var(--tooltip-margin);
+    }
+
+    &.bottom {
+      top: var(--tooltip-margin);
+    }
+
+    &.left {
+      left: auto;
+      right: calc(100% + var(--tooltip-margin));
+      top: 50%;
+      transform: translateX(15%) translateY(-50%);
+    }
+
+    &.right {
+      left: calc(100% + var(--tooltip-margin));
+      top: 50%;
+      transform: translateX(-15%) translateY(-50%);
+    }
+  }
+}

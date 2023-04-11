@@ -1,0 +1,99 @@
+@use "/src/themes/theme" as *;
+
+.root {
+  position: relative;
+  z-index: 9;
+  background-color: $primary-white-1;
+}
+
+.nav-container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.logo {
+  width: 90px;
+  cursor: pointer;
+}
+
+.section-border-line {
+  width: 1px;
+  height: 24px;
+  margin: 0 16px;
+  border: 0.5px solid $secondary-grey-2;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding-right: 20px;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 18px;
+  width: 100%;
+  text-align: center;
+  width: max-content;
+  white-space: nowrap;
+  padding: 14px 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 25px;
+  color: $secondary-grey-1;
+  text-transform: capitalize;
+
+  // disable text selection highlighting
+  -webkit-touch-callout: none; // iOS Safari
+  -webkit-user-select: none; // Safari
+  -khtml-user-select: none; // Konqueror HTML
+  -moz-user-select: none; // Old versions of Firefox
+  -ms-user-select: none; // Internet Explorer/Edge
+  user-select: none; // Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox
+
+  &:first-of-type {
+    margin-left: 35px;
+  }
+
+  &:hover {
+    background-color: $secondary-grey-2;
+  }
+}
+
+.selected {
+  color: $primary-black-1;
+  z-index: 1;
+  cursor: default;
+  background-color: transparent !important;
+}
+
+.nav-icon {
+  color: $secondary-grey-1 !important;
+  margin-left: 5px;
+}
+
+.icon {
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+
+.avatar {
+  cursor: pointer;
+}
+
+.avatar-dropdown {
+  position: relative;
+}

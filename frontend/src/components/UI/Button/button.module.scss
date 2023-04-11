@@ -1,0 +1,213 @@
+@use "/src/themes/theme" as *;
+
+.root {
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 450;
+  cursor: pointer;
+  position: relative;
+  min-width: 24px;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.only {
+  padding: 7px;
+}
+
+.long {
+  font-size: 14px;
+  height: 34px;
+  width: 100%;
+
+  @media (min-width: 425px) {
+    min-width: 300px;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.big {
+  font-size: 1rem;
+  font-weight: 600;
+  min-width: 140px;
+  padding: 16px;
+}
+
+.default {
+  &:hover {
+    color: $primary-black-1;
+    background-color: $secondary-grey-3;
+  }
+
+  &:active {
+    background-color: $secondary-blue;
+    color: $primary-white-1;
+  }
+}
+
+.primary {
+  background-color: $primary-blue-1;
+  color: $primary-white-1;
+
+  &:hover {
+    background-color: $secondary-blue;
+  }
+
+  &:active {
+    background-color: $primary-blue-1;
+  }
+
+  &:focus {
+    outline: 3px solid $secondary-grey-2;
+  }
+}
+
+.primary-disabled {
+  background-color: $secondary-grey-2 !important;
+  cursor: default;
+}
+
+.secondary {
+  background-color: $secondary-grey-3;
+  color: $primary-black-1;
+  border: 3px solid $secondary-grey-2;
+
+  &:hover {
+    background-color: $secondary-grey-2;
+  }
+
+  &:active {
+    background-color: $secondary-grey-3;
+  }
+
+  &:focus {
+    outline: 2px solid $secondary-grey-2;
+  }
+}
+
+.secondary-disabled {
+  cursor: default;
+  color: $secondary-grey-3 !important;
+  background-color: $secondary-grey-2 !important;
+}
+
+.tertiary {
+  background-color: $primary-white-1;
+  color: $primary-black-1;
+  box-shadow: 0px 0px 6px rgba($primary-black-1, 0.16);
+
+  &:hover {
+    background-color: $secondary-grey-2;
+  }
+
+  &:active {
+    background-color: $secondary-grey-3;
+  }
+
+  &:focus {
+    outline: 3px solid $secondary-grey-2;
+  }
+}
+
+.tertiary-disabled {
+  cursor: default;
+  background-color: inherit !important;
+  color: $secondary-grey-3;
+}
+
+.warning {
+  background-color: $secondary-yellow;
+  color: $primary-black-1;
+
+  &:hover {
+    background-color: $secondary-yellow;
+  }
+
+  &:active {
+    background-color: $secondary-yellow;
+  }
+
+  &:focus {
+    outline: 3px solid $secondary-yellow;
+  }
+}
+
+.warning-disabled {
+  cursor: default;
+  background-color: $secondary-yellow !important;
+  color: $primary-white-1;
+}
+
+.error {
+  background-color: $secondary-red;
+  color: $primary-white-1;
+
+  &:hover {
+    background-color: $secondary-red;
+  }
+
+  &:active {
+    background-color: $secondary-red;
+  }
+
+  &:focus {
+    outline: 3px solid $secondary-red;
+  }
+}
+
+.error-disabled {
+  cursor: default;
+  background-color: $secondary-red !important;
+}
+
+.success {
+  background-color: $secondary-green;
+  color: $primary-white-1;
+
+  &:hover {
+    background-color: $secondary-green;
+  }
+
+  &:active {
+    background-color: $secondary-green;
+  }
+
+  &:focus {
+    outline: 3px solid $secondary-green;
+  }
+}
+
+.success-disabled {
+  cursor: default;
+  background-color: $secondary-green !important;
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.start-icon {
+  margin-right: 4px;
+}
+
+.end-icon {
+  margin-left: 4px;
+}

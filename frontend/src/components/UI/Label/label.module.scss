@@ -1,0 +1,51 @@
+@use "/src/themes/theme" as *;
+
+.root {
+  font-size: 11px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.grey2 {
+  background-color: $secondary-grey-2;
+  color: $primary-black-1;
+}
+
+.green1 {
+  background-color: $secondary-green;
+  color: $primary-white-1;
+}
+
+.yellow1 {
+  background-color: $secondary-yellow;
+  color: $primary-black-1;
+}
+
+.red1 {
+  background-color: $secondary-red;
+  color: $primary-white-1;
+}
+
+.red2 {
+  background-color: $secondary-red;
+  color: $primary-white-1;
+}
+
+.blue1 {
+  background-color: $secondary-blue;
+  color: $primary-white-1;
+}
+
+.orange1 {
+  background-color: $secondary-orange-1;
+  color: $primary-white-1;
+}

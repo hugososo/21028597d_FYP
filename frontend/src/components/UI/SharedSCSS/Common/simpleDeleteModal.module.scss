@@ -1,0 +1,51 @@
+@use "/src/modules/theme.scss";
+
+.root {
+  width: 420px;
+  padding: 24px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .close {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      margin-left: 8px;
+    }
+  }
+
+  .msg-wrapper {
+    display: flex;
+    margin-bottom: 24px;
+
+    .error-icon {
+      height: 24px;
+      width: 24px;
+      color: $secondary-red;
+      margin-right: 16px;
+    }
+  }
+
+  .input {
+    margin-bottom: 24px;
+
+    input::placeholder {
+      font-style: italic !important;
+    }
+  }
+
+  .btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

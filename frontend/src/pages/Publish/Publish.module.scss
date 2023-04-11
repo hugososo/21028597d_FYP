@@ -1,0 +1,39 @@
+@use "/src/themes/theme" as *;
+
+.root {
+    margin-bottom: 40px;
+}
+
+.top-panel {
+    margin: auto;
+    width: 73%;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.main-content {
+    margin: auto;
+    width: 73%;
+    margin-top: 40px;
+}
+
+.field {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-block: 40px;
+
+    .name {
+        min-width: 250px;
+    }
+}
+
+.btn {
+    margin-top: 20px;
+    float: right;
+}
+
+.area {
+    height: 500px !important;
+}

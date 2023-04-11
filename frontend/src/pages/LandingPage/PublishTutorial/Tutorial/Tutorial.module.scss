@@ -1,0 +1,27 @@
+@use "/src/themes/theme" as *;
+
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 550px;
+    max-height: 550px;
+    width: 390px;
+    padding: 0 50px 50px 50px;
+    background-color: $primary-white-1;
+}
+
+.image {
+    min-width: 300px;
+    width: 300px;
+    object-fit: contain;
+}
+
+.tutorial-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}

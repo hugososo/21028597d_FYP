@@ -1,0 +1,13 @@
+@use "/src/themes/theme" as *;
+
+.root {
+    padding: 30px 40px;
+}
+
+
+.footer-nav {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 25px 0;
+}

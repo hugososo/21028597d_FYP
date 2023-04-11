@@ -1,0 +1,24 @@
+@use "/src/themes/theme" as *;
+
+.stakeinfo-container {
+    align-items: center;
+    justify-content: center;
+    padding-inline: 100px;
+    gap: 80px;
+}
+
+.left-container {
+    display: flex;
+    flex: 2 2 0;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-container {
+    flex: 0 0 50%;
+}
+
+.img {
+    width: 100%;
+    object-fit: contain;
+}

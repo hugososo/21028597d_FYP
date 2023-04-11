@@ -1,0 +1,87 @@
+@use "src/modules/theme" as *;
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 16px;
+  vertical-align: middle;
+  // // reference: https://stackoverflow.com/questions/69362612/what-causes-the-flash-of-grey-when-i-click-on-an-input-on-my-iphone
+  -webkit-tap-highlight-color: transparent;
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:checked+.switch {
+      background-color: $secondary-green;
+      justify-content: flex-start;
+
+      &:before {
+        transform: translateX(16px);
+      }
+    }
+
+    &:disabled~.switch {
+      cursor: default;
+      background-color: $secondary-grey-2;
+
+      & .cross {
+        color: $extended-grey-blue-1;
+      }
+
+      & .tick {
+        color: $extended-grey-blue-1;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .switch {
+    position: absolute;
+    cursor: pointer;
+    background-color: $extended-dark-blue-1;
+    border-radius: 25px;
+    opacity: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &:before {
+      position: absolute;
+      content: "";
+      left: 2px;
+      right: 2px;
+      top: 2px;
+      width: 12px;
+      height: 12px;
+      background-color: $primary-white-1;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+
+    .icon {
+      height: 20px;
+      width: 20px;
+    }
+
+    .tick {
+      color: $primary-white-1;
+    }
+
+    .cross {
+      color: $primary-white-1;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

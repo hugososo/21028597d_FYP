@@ -1,0 +1,13 @@
+@use "/src/themes/theme" as *;
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 220px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.search-bar {
+    margin: 50px auto;
+    width: 82%;
+}

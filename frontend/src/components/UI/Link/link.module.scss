@@ -1,0 +1,17 @@
+@use "/src/themes/theme" as *;
+
+.root {
+  color: $primary-blue-1;
+  cursor: pointer;
+  width: max-content;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    color: $secondary-blue;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}

@@ -1,0 +1,64 @@
+@use "/src/themes/theme" as *;
+
+.root {
+    border-radius: 10px;
+    border: 1px solid $secondary-grey-2;
+}
+
+.stake-method {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.stake-action {
+    padding: 16px;
+    background-color: $secondary-grey-2;
+}
+
+.staked-amount {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stake-input {
+    display: flex;
+    align-items: center;
+    background-color: $primary-white-1;
+    padding-right: 10px;
+
+    .input {
+        input {
+            outline: none !important;
+            border: none !important;
+        }
+    }
+
+    Button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
+.button-grp {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+
+    Button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
+.rewards-amount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: $secondary-grey-3;
+    border-radius: 10px;
+}

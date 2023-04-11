@@ -1,0 +1,55 @@
+@use "/src/themes/theme" as *;
+
+.root {
+    margin: 20px;
+}
+
+.book-detail-container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img {
+    overflow: hidden;
+    width: 430px;
+    height: 500px;
+    flex: 1 1 1;
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+.book-info {
+    width: 100%;
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.price {
+    display: flex;
+    gap: 20px;
+}
+
+.data-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.des {
+    font-size: 14px;
+    color: $secondary-dark-grey-1;
+}

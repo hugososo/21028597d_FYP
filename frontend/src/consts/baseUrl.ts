@@ -1,0 +1,1 @@
+export const IPFS_VIEW_URL = "https://debook.infura-ipfs.io/ipfs/"

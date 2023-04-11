@@ -1,0 +1,23 @@
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+
+  @media (min-width: 425px) {
+    top: 1em;
+    left: auto;
+    right: 1em;
+  }
+}
+
+.flag {
+  margin-bottom: 1em;
+  // z-index: 1; // TODO: remove this z-index after checking all notification alerts look fine (since z-index is moved to `root` class)
+  border-radius: 0 !important;
+
+  @media (min-width: 425px) {
+    border-radius: 4px !important;
+  }
+}

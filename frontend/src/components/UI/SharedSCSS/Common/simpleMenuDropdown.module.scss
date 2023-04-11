@@ -1,0 +1,44 @@
+@use "/src/modules/theme.scss";
+
+.root-wrapper {
+  position: absolute;
+  top: 24px;
+  right: -1px;
+  width: max-content;
+  z-index: 1;
+  padding-bottom: 4px;
+}
+
+.root {
+  background-color: $primary-white-1;
+  padding: 4px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba($primary-black-1, 0.16);
+
+  .item {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 16px;
+    height: 32px;
+    padding: 8px;
+
+    &:hover {
+      background-color: $secondary-grey-3;
+      border-radius: 4px;
+    }
+  }
+
+  .big-item {
+    // e.g. dropdown of add camera
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.disabled {
+  cursor: default !important;
+  color: $extended-light-grey-1 !important;
+  background-color: $extended-light-grey-2 !important;
+}

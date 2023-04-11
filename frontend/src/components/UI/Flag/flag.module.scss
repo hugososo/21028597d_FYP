@@ -1,0 +1,93 @@
+@use "/src/themes/theme" as *;
+
+.root {
+  display: flex;
+  width: 100vw;
+  padding: 22px;
+  border-radius: 4px;
+
+  @media (min-width: 425px) {
+    width: 400px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.info {
+  background-color: $primary-blue-1;
+  color: $primary-white-1;
+}
+
+.warning {
+  background-color: $secondary-yellow;
+  color: $primary-black-1;
+}
+
+.success {
+  background-color: $secondary-green;
+  color: $primary-white-1;
+}
+
+.error {
+  background-color: $secondary-red;
+  color: $primary-white-1;
+}
+
+.main {
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: max-content;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.message {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  transition: max-height 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.buttons {
+  margin-top: 11px;
+  display: flex;
+}
+
+.button {
+  margin-right: 8px;
+  background-color: rgba($primary-black-1, 0.16);
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  color: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.warning-button {
+  background-color: rgba($secondary-grey-1, 0.08) !important;
+  color: $primary-white-1;
+}
+
+.status-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.contentinfo {
+  width: 300px;
+  word-wrap: break-word;
+}

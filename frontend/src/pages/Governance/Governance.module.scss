@@ -1,0 +1,71 @@
+@use "/src/themes/theme" as *;
+
+.root {
+    margin-bottom: 40px;
+}
+
+.top-panel {
+    margin: auto;
+    width: 73%;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.main-content {
+    margin: auto;
+    width: 80%;
+    margin-top: 40px;
+}
+
+.table {
+    width: 100%;
+    text-align: left;
+    font-size: smaller;
+
+    th,
+    td {
+        padding: 10px;
+        background-color: $secondary-blue-100;
+    }
+
+    th:first-child {
+        color: $secondary-light-blue;
+    }
+}
+
+.modal {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.id {
+    padding: 20px;
+    background-color: $secondary-blue-100;
+    color: $secondary-grey-1;
+}
+
+.input-container {
+    padding: 10px;
+    width: 100%;
+}
+
+.header {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cross {
+    cursor: pointer;
+}

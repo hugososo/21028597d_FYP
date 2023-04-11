@@ -1,0 +1,39 @@
+@use "/src/themes/theme" as *;
+
+.root {
+  position: fixed;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($primary-black-1, 0.5);
+  z-index: 99;
+}
+
+.content {
+  max-height: calc(100vh - 64px);
+  max-width: calc(100vw - 64px);
+  overflow-y: auto;
+  background-color: $primary-white-1;
+  border-radius: 8px;
+  border: 1px solid $secondary-grey-2;
+
+  scrollbar-width: none; // firefox
+  -ms-overflow-style: none; // ie 10+
+
+  &::-webkit-scrollbar {
+    // chrome
+    width: 0;
+    height: 0;
+  }
+}
+
+.default {
+  width: fit-content;
+}
+
+.medium {
+  width: 600px;
+}

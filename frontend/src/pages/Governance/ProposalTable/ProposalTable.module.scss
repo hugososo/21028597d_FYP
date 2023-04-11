@@ -1,0 +1,48 @@
+@use "/src/themes/theme" as *;
+
+.table {
+    width: 100%;
+    text-align: left;
+    font-size: smaller;
+
+    tr {
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(194, 193, 193, 0.15);
+        }
+    }
+
+    th,
+    td {
+        padding: 10px;
+        border-bottom: 1px solid $secondary-grey-2;
+        font-weight: 600;
+    }
+
+    th {
+        font-size: smaller;
+        color: $secondary-grey-1;
+    }
+
+    th:first-child {
+        color: $secondary-light-blue;
+    }
+
+    .des {
+        margin-block: 4px;
+        gap: 8px;
+    }
+
+    .propose-date {
+        color: $secondary-grey-1;
+    }
+
+    .agree {
+        color: $secondary-green;
+    }
+
+    .against {
+        color: $secondary-red;
+    }
+}

@@ -1,0 +1,21 @@
+@use "/src/themes/theme" as *;
+
+.root {
+  background-color: $secondary-grey-3;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 3px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.root:hover {
+  background-color: $secondary-blue;
+  color: $primary-white-1;
+}
+
+.icon {
+  margin-left: 4px;
+  cursor: pointer;
+}

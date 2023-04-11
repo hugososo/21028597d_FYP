@@ -1,0 +1,17 @@
+@use "/src/themes/theme" as *;
+
+.root {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.header {
+    width: max-content;
+    display: flex;
+    gap: 5px;
+}
+
+.content {
+    color: $secondary-grey-1;
+}

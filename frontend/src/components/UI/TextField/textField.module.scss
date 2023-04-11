@@ -1,0 +1,148 @@
+@use "/src/themes/theme" as *;
+
+.text-field {
+  width: 100%;
+
+  .label {
+    font-size: 14px;
+    color: $secondary-grey-1;
+    margin-bottom: 4px;
+    display: flex;
+  }
+
+  .input {
+    width: 100%;
+    color: $primary-black-1;
+    font-size: 14px;
+    height: 40px;
+    border: solid 1px $secondary-grey-2;
+    border-radius: 4px;
+    caret-color: #707070;
+    padding-left: 12px;
+    font-family: inherit;
+
+    &:hover {
+      background-color: $secondary-grey-3;
+
+      ~.end-icon {
+        background-color: $secondary-grey-3 !important;
+      }
+    }
+
+    &:focus {
+      border: solid 2px $primary-blue-1;
+      outline: none;
+      padding-left: 11px;
+    }
+
+    &:disabled {
+      color: $secondary-grey-2;
+      background-color: $secondary-grey-2;
+
+      ~.end-icon {
+        color: $secondary-grey-2 !important;
+        background-color: $secondary-grey-2 !important;
+      }
+    }
+
+    &::placeholder {
+      color: $secondary-grey-1;
+    }
+  }
+
+  .error-border {
+    border: solid 2px $secondary-red !important;
+    padding-left: 11px;
+  }
+
+  .message-wrapper {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 4px;
+    width: 100%;
+
+    .message {
+      font-size: 12px;
+      line-height: 20px;
+      color: $secondary-blue;
+    }
+
+    .error {
+      color: $secondary-red;
+    }
+
+    .success {
+      color: $secondary-green;
+    }
+
+    .icon {
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
+
+.full-space {
+  width: 100%;
+}
+
+.field {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.start-icon {
+  position: absolute;
+  left: 8px;
+
+  ~.input {
+    padding-left: 36px;
+
+    &:focus {
+      padding-left: 35px;
+    }
+  }
+
+  ~.error-border {
+    padding-left: 36px;
+  }
+}
+
+.end-icon {
+  position: absolute;
+  right: 8px;
+  background-color: $primary-white-1;
+}
+
+.styled-error {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+
+  .error-tag-wrapper {
+    background-color: $secondary-grey-3;
+    border-radius: 4px;
+    height: 16px;
+    width: max-content;
+    padding: 0 4px 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .error-tag {
+      color: $primary-black-1;
+    }
+  }
+
+  .tag-end {
+    margin-left: 4px;
+  }
+
+  .tag-front {
+    margin-right: 4px;
+  }
+}

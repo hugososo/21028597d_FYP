@@ -1,0 +1,109 @@
+@use "/src/themes/theme" as *;
+
+.checkbox-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  cursor: pointer;
+  // reference: https://stackoverflow.com/questions/69362612/what-causes-the-flash-of-grey-when-i-click-on-an-input-on-my-iphone
+  -webkit-tap-highlight-color: transparent;
+
+  &.checkbox-wrapper-disabled {
+    cursor: default;
+  }
+
+  .input-container {
+    display: inline-block;
+    vertical-align: middle;
+
+    input[type="checkbox"] {
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+      overflow: hidden;
+      position: absolute;
+      height: 1px;
+      width: 1px;
+
+      &:disabled~.checkbox {
+        background-color: $secondary-grey-2;
+        border-color: $secondary-grey-2;
+      }
+
+      &:focus {
+        ~.checkbox {
+          border-color: $primary-blue-1;
+        }
+
+        ~.error {
+          border-color: $secondary-red;
+        }
+      }
+    }
+
+    .checkbox {
+      position: relative;
+      width: 14px;
+      height: 14px;
+      transition: all 150ms;
+      background-color: $primary-white-1;
+      border: 2px solid $secondary-grey-2;
+      border-radius: 4px;
+      opacity: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary-white-1;
+
+      &:hover {
+        background-color: $secondary-grey-3;
+      }
+    }
+
+    .checked {
+      background-color: $primary-blue-1 !important;
+      border-color: $primary-blue-1;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .error {
+      border-color: $secondary-red;
+    }
+
+    .tick-icon {
+      transform: scale(2); // size
+      fill: $primary-white-1;
+    }
+  }
+
+  .text {
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    color: $primary-black-1;
+  }
+
+  .required-star {
+    color: $secondary-red;
+  }
+
+  /* reference: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+  .span-disable-highlight {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  }
+}

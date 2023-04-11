@@ -1,0 +1,12 @@
+@use "/src/themes/theme" as *;
+
+.root {
+  color: $primary-blue-1;
+  cursor: pointer;
+  width: max-content;
+  text-decoration: none;
+
+  &:hover {
+    color: $secondary-blue;
+  }
+}

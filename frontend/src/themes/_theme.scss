@@ -1,0 +1,74 @@
+// Primary Palette
+$primary-blue-1: #507efa;
+$primary-black-1: #232528;
+$primary-white-1: #ffffff;
+
+// Secondary Palette
+$secondary-light-green: #5fc298;
+$secondary-green: #36b37e;
+$accent-dark-green: #25875d;
+
+$secondary--light-yellow: #fff0b3;
+$secondary-yellow: #ffdd00;
+$secondary-dark-yellow: #ebcc00;
+
+$secondary-light-red: #ffbdad;
+$secondary-red: #eb5757;
+$secondary-dark-red: #af3b3b;
+
+$secondary-blue-100: #eff7fc;
+$secondary-light-blue: #54b1c0;
+$secondary-blue: #2541b2;
+$secondary-dark-blue: #0a1e72;
+
+$secondary-orange-1: #f99b2e;
+
+$secondary-grey-1: #8e8e8e;
+$secondary-grey-2: #e5e5e5;
+$secondary-grey-3: #fafafb;
+
+$secondary-dark-grey-1: #5a5a5a;
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container {
+    padding: 0 50px;
+}
+
+.line {
+    width: 100%;
+    background-color: $secondary-grey-2;
+    height: 0.8px;
+}
+
+.center {
+    align-items: center;
+}
+
+:export {
+    // Primary Palette
+    primaryBlue1: $primary-blue-1;
+    primaryBlack1: $primary-black-1;
+    primaryWhite1: $primary-white-1;
+
+    // Secondary Palette
+    secondaryGreen1: $secondary-green;
+    secondaryYellow1: $secondary-yellow;
+    secondaryRed1: $secondary-red;
+    secondaryRed2: $secondary-red;
+    secondaryBlue1: $secondary-blue;
+    secondaryOrange1: $secondary-orange-1;
+    secondaryGrey1: $secondary-grey-1;
+    secondaryGrey2: $secondary-grey-2;
+    secondaryGrey3: $secondary-grey-3;
+}

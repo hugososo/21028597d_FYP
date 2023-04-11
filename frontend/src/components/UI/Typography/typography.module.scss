@@ -1,0 +1,81 @@
+@use "/src/themes/theme" as *;
+
+.root {
+  width: 100%;
+  color: inherit;
+}
+
+.grey {
+  color: $secondary-dark-grey-1;
+}
+
+.body1 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body2 {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.body3 {
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.h1 {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+
+.h4 {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.h5 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+.h6 {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 600;
+}
+
+.title1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.subtitle1 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.subtitle2 {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 500;
+}

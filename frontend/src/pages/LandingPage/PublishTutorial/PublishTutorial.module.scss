@@ -1,0 +1,53 @@
+@use "/src/themes/theme" as *;
+
+.root {
+    position: relative;
+    margin: 150px 0;
+}
+
+.publish-tutorial-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $secondary-blue;
+}
+
+.item-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.root::before {
+    content: "";
+    display: block;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -150px;
+    background-image: url("../../../../src/assets/wave1.svg");
+
+    @media (max-width: 425px) {
+        display: none;
+    }
+}
+
+.root::after {
+    content: "";
+    display: block;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -150px;
+    background-image: url("../../../../src/assets/wave2.svg");
+
+    @media (max-width: 425px) {
+        display: none;
+    }
+}

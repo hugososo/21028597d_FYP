@@ -1,0 +1,103 @@
+@use "/src/themes/theme" as *;
+
+.root {
+  position: absolute;
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.side-bar {
+  height: 100%;
+  background-color: $primary-white-1;
+  width: 350px;
+  min-width: max-content;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.close-btn {
+  padding: 8px;
+  color: $secondary-grey-1 !important;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $secondary-grey-2;
+  }
+}
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  padding-block: 40px;
+
+  .avatar {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+
+    img {
+      width: 36px !important;
+      height: 36px !important;
+    }
+
+    div {
+      font-size: 12px !important;
+    }
+  }
+
+  .signed-in-as {
+    color: $secondary-grey-1;
+  }
+}
+
+.category {
+  font-weight: 500;
+  width: fit-content;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: max-content;
+
+  &:hover {
+    color: $primary-blue-1;
+  }
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 18px;
+}
+
+.btn {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.selected {
+  color: $primary-blue-1;
+  cursor: default;
+
+  &:hover {
+    color: $primary-blue-1;
+  }
+}
+
+.interval {
+  margin-top: 20px;
+}

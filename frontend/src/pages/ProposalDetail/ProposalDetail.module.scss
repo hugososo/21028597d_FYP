@@ -1,0 +1,79 @@
+@use "/src/themes/theme" as *;
+
+.root {
+    margin: 20px;
+}
+
+.top-panel {
+    margin: auto;
+    width: 73%;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.main-content {
+    margin: auto;
+    width: 73%;
+    margin-top: 40px;
+}
+
+.status {
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    color: $secondary-grey-1;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.title {
+    word-break: break-all;
+}
+
+.vote {
+    font-weight: 600;
+    width: 120px;
+}
+
+.modal {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.id {
+    padding: 20px;
+    background-color: $secondary-blue-100;
+    color: $secondary-grey-1;
+}
+
+.input-container {
+    padding: 10px;
+    width: 100%;
+}
+
+.header {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cross {
+    cursor: pointer;
+}
+
+.description {
+    white-space: pre-wrap;
+}

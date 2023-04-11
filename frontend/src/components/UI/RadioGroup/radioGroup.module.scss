@@ -1,0 +1,91 @@
+@use "/src/themes/theme" as *;
+
+.title {
+  color: $secondary-grey-1;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.radio-group-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .radio {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid $secondary-grey-2;
+    padding: 20px;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: rgb(190, 190, 190, 0.2);
+    }
+  }
+}
+
+.radio-group-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio {
+  color: $primary-black-1;
+  font-size: 14px;
+  line-height: 14px;
+  width: max-content;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+  &:has(>input[type="radio"][color="red"]:checked) {
+    background-color: $secondary-red;
+    color: $primary-white-1;
+  }
+
+  &:has(>input[type="radio"][color="green"]:checked) {
+    background-color: $secondary-green;
+    color: $primary-white-1;
+  }
+
+  input[type="radio"] {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid $secondary-grey-1;
+    margin: 0 8px 0 0;
+    vertical-align: top;
+    cursor: pointer;
+
+    &[color="red"] {
+      border: 2px solid $secondary-red;
+    }
+
+    &[color="green"] {
+      border: 2px solid $secondary-green;
+    }
+
+    &[color="green"]:hover {
+      background-color: $secondary-green;
+    }
+
+    &[color="red"]:hover {
+      background-color: $secondary-red;
+    }
+
+    &:hover {
+      background-color: $secondary-grey-1;
+    }
+
+    &:checked {
+      border: 5px solid $primary-white-1;
+    }
+
+  }
+}
+
+.radio-margin-right {
+  margin-right: 16px;
+}
